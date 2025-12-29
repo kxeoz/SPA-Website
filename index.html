@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas L. Galvez MNHS - SPA Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <custom-navbar></custom-navbar>
+
+    <div id="hero" class="hero-section text-white">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content animate__animated animate__fadeInUp">
+                <h1 class="display-3 fw-bold">Special Program in the Arts</h1>
+                <p class="lead">Nurturing creativity, passion, and excellence</p>
+                <a href="#majors" class="btn btn-primary btn-lg mt-3 animate__animated animate__pulse animate__infinite">Explore Majors</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="majors" class="py-5 bg-light">
+        <div class="container">
+            <h1 class="text-center mb-5">SPA MAJORS</h1>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card major-card h-100 animate__animated animate__fadeIn" data-major="music">
+                        <img src="images/spa music.jpeg" class="card-img-top" alt="Music">
+                        <div class="card-body">
+                            <h5 class="card-title">Music</h5>
+                            <p class="card-text">Discover the harmony of melodies and the rhythm of life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card major-card h-100 animate__animated animate__fadeIn" data-major="dance" data-delay="200">
+                        <img src="images/spa dance.jpeg" class="card-img-top" alt="Dance">
+                        <div class="card-body">
+                            <h5 class="card-title">Dance</h5>
+                            <p class="card-text">Express yourself through movement and grace.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card major-card h-100 animate__animated animate__fadeIn" data-major="visual-arts" data-delay="400">
+                        <img src="images/spa visual.jpeg" class="card-img-top" alt="Visual Arts">
+                        <div class="card-body">
+                            <h5 class="card-title">Visual Arts</h5>
+                            <p class="card-text">Create masterpieces that speak to the soul.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card major-card h-100 animate__animated animate__fadeIn" data-major="theatre" data-delay="600">
+                        <img src="images/spa theater.jpeg" class="card-img-top" alt="Theatre">
+                        <div class="card-body">
+                            <h5 class="card-title">Theatre</h5>
+                            <p class="card-text">Bring stories to life on stage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card major-card h-100 animate__animated animate__fadeIn" data-major="media" data-delay="800">
+                        <img src="images/spa media.jpeg" class="card-img-top" alt="Media Arts">
+                        <div class="card-body">
+                            <h5 class="card-title">Media Arts</h5>
+                            <p class="card-text">Capture moments and create digital magic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card major-card h-100 animate__animated animate__fadeIn" data-major="creative-writing" data-delay="1000">
+                        <img src="images/spa creatives.jpg" class="card-img-top" alt="Creative Writing">
+                        <div class="card-body">
+                            <h5 class="card-title">Creative Writing</h5>
+                            <p class="card-text">Weave words into worlds of wonder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
